@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'SF Pro';
+    src: url('path/to/SF-Pro-Regular.woff2') format('woff2'),
+        /* Regular */
+        url('path/to/SF-Pro-Bold.woff2') format('woff2'),
+        /* Bold */
+        url('path/to/SF-Pro-Italic.woff2') format('woff2');
+    /* Italic */
+    /* Include other font formats (woff, eot, ttf) for better browser support */
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+
+}
+
+.title {
+    color: #1B0C75;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.brand-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.brands-slider-col {
+    height: 200px;
+    width: 100%;
+    float: none
+}
+
+#brand-discount-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100% !important;
+    height: 200px !important;
+    padding: 0px 0px;
+}
+
+#brand-discount-slider ul {
+    position: relative;
+    margin: 0 !important;
+    height: 100% !important;
+    list-style: none;
+    display: flex;
+    width: 100% !important;
+}
+
+#brand-discount-slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: auto;
+    padding: 17px;
+    width: 100%;
+    text-align: center;
+}
+
+/* #brand-discount-slider ul li img {
+    width: 100%;
+} */
+
+.brand-arrow-prev {
+    width: 50px;
+    height: 81%;
+    text-align: center;
+    line-height: 177px;
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 25;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+
+.brand-arrow-next {
+    width: 50px;
+    height: 81%;
+    text-align: center;
+    line-height: 177px;
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: 25;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+
+.brand-arrow-next:hover,
+.brand-arrow-prev:hover {
+    color: #d58e35;
+}
+
+/* Program Section */
+.program {
+    position: relative;
+    width: 100%;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.prog {
+    background-color: #F5F8FB;
+    padding: 15px 10px;
+    border-radius: 60px 10px 10px 60px;
+    max-width: 650px;
+    max-height: 100px;
+    margin-bottom: 20px;
+}
+
+.prog p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.87px;
+    margin: auto;
+}
+
+.prog .circle {
+    background-color: #EA6838;
+    border-radius: 100%;
+    height: 70px;
+    width: 12%;
+    margin-right: 10px;
+}
+
+.prog .circle img {
+    width: 50px;
+    height: 20px;
+    margin: auto;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.swiper-backface-hidden .swiper-slide {
+    width: 200px !important;
+}
+
+.companies {
+    margin-bottom: 100px !important;
+    margin-top: 100px !important;
+}
+
+.features .content {
+    display: flex;
+    justify-content: center;
+}
+
+
+.feature-contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.features .feat {
+    position: relative;
+    display: flex;
+    width: 170px;
+    margin: 20px 80px 54px 80px;
+    background-color: #ccc;
+    height: 170px;
+}
+
+.feat img {
+    width: 110px;
+    height: 110px;
+    margin: auto;
+}
+
+.text-container {
+    position: absolute;
+    top: 100%;
+    /* Adjust this value to position the text outside the div */
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* For responsiveness */
+@media (max-width: 768px) {
+    .features .feat {
+        width: 45%;
+        /* Adjust width for smaller screens */
+    }
+}
+
+.features .feat1 {
+    background-color: #2424FF;
+}
+
+.features .feat2 {
+    background-color: #1B0C75;
+}
+
+.features .feat3 {
+    background-color: #1F17AF;
+}
