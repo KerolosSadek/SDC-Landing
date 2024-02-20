@@ -1,9 +1,18 @@
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
+    slidesPerView: 6,
     spaceBetween: 30,
     freeMode: false,
     pagination: {
         el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+var swiper = new Swiper(".mySwiper-feat", {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    freeMode: false,
+    pagination: {
+        el: ".swiper-pagination-features",
         clickable: true,
     },
 });

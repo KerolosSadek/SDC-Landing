@@ -207,7 +207,7 @@ body {
     height: 170px;
 }
 
-.feat img {
+.features img {
     width: 110px;
     height: 110px;
     margin: auto;
@@ -216,10 +216,11 @@ body {
 .text-container {
     position: absolute;
     top: 100%;
-    /* Adjust this value to position the text outside the div */
     left: 0;
     width: 100%;
     text-align: center;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /* For responsiveness */
@@ -232,6 +233,10 @@ body {
 
 .features .feat1 {
     background-color: #2424FF;
+    margin-right: 30px;
+    width: 170px !important;
+    height: 170px;
+    display: flex;
 }
 
 .features .feat2 {
@@ -240,4 +245,38 @@ body {
 
 .features .feat3 {
     background-color: #1F17AF;
+}
+
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #EA6838 !important;
+}
+
+.swiper-pagination-features {
+    text-align: center !important;
+}
+
+.swiper-events {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide-event {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide-event img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
