@@ -1,11 +1,37 @@
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 6,
+var swiper = new Swiper(".myswiper-event", {
     spaceBetween: 30,
-    freeMode: false,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: true,
     },
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+var swiper = new Swiper(".mySwiper-mobile", {
+    slidesPerView: 15,
+    spaceBetween: 60,
+    freeMode: false,
+    centeredSlides: false,
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
+    // navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    // },
 });
 var swiper = new Swiper(".mySwiper-feat", {
     slidesPerView: 5,
